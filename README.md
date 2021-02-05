@@ -5,7 +5,8 @@
 > 轻业务、重技术，是这个原项目的精髓。我抽离出整个项目构建的逻辑和思路，删去了一些对于初学者，和意图速成的同学关联不大的内容，并针对已有的内容作出一些简单的补充和思考。</br>
 
 ## 介绍
-github只做源码的上传，如果大家需要一些简单的文字的解释，请移步...浏览
+github只做源码的上传，如果大家需要一些简单的文字的解释，请移步公众号浏览，每一个对应天数下会上传对应文章的链接。
+[![y8UWyq.jpg](https://s3.ax1x.com/2021/02/05/y8UWyq.jpg)](https://imgchr.com/i/y8UWyq)
 
 ## 技术栈（全项目）
 SpringBoot2, Java1.8, Maven, MySQL, MyBatis, MyBatisPlus, Thymeleaf, JQuery, Druid
