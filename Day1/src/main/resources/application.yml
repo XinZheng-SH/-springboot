@@ -5,20 +5,20 @@ spring:
         enabled: true
   datasource:
     druid:
-      driver-class-name: com.mysql.cj.jdbc.Driver            # Êı¾İ¿â·ÃÎÊÅäÖÃ,Ö÷Êı¾İÔ´£¬Ä¬ÈÏµÄ
-      url: jdbc:mysql://localhost:3306/xiaozedb?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
+      driver-class-name: com.mysql.cj.jdbc.Driver            # æ•°æ®åº“è®¿é—®é…ç½®,ä¸»æ•°æ®æºï¼Œé»˜è®¤çš„
+      url: jdbc:mysql://localhost:3306/zhengxin?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
       username: root
       password: 232323
-      initial-size: 5          # ÏÂÃæÎªÁ¬½Ó³ØµÄ²¹³äÉèÖÃ£¬Ó¦ÓÃµ½ÉÏÃæËùÓĞÊı¾İÔ´ÖĞ,³õÊ¼»¯´óĞ¡£¬×îĞ¡£¬×î´ó
+      initial-size: 5          # ä¸‹é¢ä¸ºè¿æ¥æ± çš„è¡¥å……è®¾ç½®ï¼Œåº”ç”¨åˆ°ä¸Šé¢æ‰€æœ‰æ•°æ®æºä¸­,åˆå§‹åŒ–å¤§å°ï¼Œæœ€å°ï¼Œæœ€å¤§
       min-idle: 5
       max-active: 20
-      max-wait: 60000          # ÅäÖÃ»ñÈ¡Á¬½ÓµÈ´ı³¬Ê±µÄÊ±¼ä
-      time-between-eviction-runs-millis: 60000          # ÅäÖÃ¼ä¸ô¶à¾Ã²Å½øĞĞÒ»´Î¼ì²â£¬¼ì²âĞèÒª¹Ø±ÕµÄ¿ÕÏĞÁ¬½Ó£¬µ¥Î»ÊÇºÁÃë
-      min-evictable-idle-time-millis: 300000            # ÅäÖÃÒ»¸öÁ¬½ÓÔÚ³ØÖĞ×îĞ¡Éú´æµÄÊ±¼ä£¬µ¥Î»ÊÇºÁÃë
+      max-wait: 60000          # é…ç½®è·å–è¿æ¥ç­‰å¾…è¶…æ—¶çš„æ—¶é—´
+      time-between-eviction-runs-millis: 60000          # é…ç½®é—´éš”å¤šä¹…æ‰è¿›è¡Œä¸€æ¬¡æ£€æµ‹ï¼Œæ£€æµ‹éœ€è¦å…³é—­çš„ç©ºé—²è¿æ¥ï¼Œå•ä½æ˜¯æ¯«ç§’
+      min-evictable-idle-time-millis: 300000            # é…ç½®ä¸€ä¸ªè¿æ¥åœ¨æ± ä¸­æœ€å°ç”Ÿå­˜çš„æ—¶é—´ï¼Œå•ä½æ˜¯æ¯«ç§’
       validation-query: SELECT 1
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
-      pool-prepared-statements: true           # ´ò¿ªPSCache£¬²¢ÇÒÖ¸¶¨Ã¿¸öÁ¬½ÓÉÏPSCacheµÄ´óĞ¡
+      pool-prepared-statements: true           # æ‰“å¼€PSCacheï¼Œå¹¶ä¸”æŒ‡å®šæ¯ä¸ªè¿æ¥ä¸ŠPSCacheçš„å¤§å°
       max-pool-prepared-statement-per-connection-size: 20
-      filters: stat         # ÅäÖÃ¼à¿ØÍ³¼ÆÀ¹½ØµÄfilters£¬È¥µôºó¼à¿Ø½çÃæsqlÎŞ·¨Í³¼Æ£¬'wall'ÓÃÓÚ·À»ğÇ½
+      filters: stat         # é…ç½®ç›‘æ§ç»Ÿè®¡æ‹¦æˆªçš„filtersï¼Œå»æ‰åç›‘æ§ç•Œé¢sqlæ— æ³•ç»Ÿè®¡ï¼Œ'wall'ç”¨äºé˜²ç«å¢™
